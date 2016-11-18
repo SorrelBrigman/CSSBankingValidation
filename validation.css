@@ -1,0 +1,9 @@
+[type="url"]:valid,
+[type="email"]:valid {
+	background-color: green;
+}
+
+[type="url"]:invalid,
+[type="email"]:invalid {
+	background-color: red;
+}
