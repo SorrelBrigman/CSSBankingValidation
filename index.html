@@ -1,0 +1,83 @@
+<link rel="stylesheet" type="text/css" href="validation.css">
+
+<h1>Thank you for applying for a home loan with us!</h1>
+<h3>Please fill out the following form:</h3>
+<div>
+	<form method="post">
+	    <fieldset>
+			First Name:
+			<input type="text" name="firstName">
+			Middle Inital:
+			<input type="text" name="midInt" size="1" maxlength="2">
+			Last Name:
+			<input type="text" name="lastName">
+			<br>
+			Applicant Address:
+			<br>
+			<textarea name="applicantAddress" rows="4" cols="30"></textarea>
+			<br>
+			Occupation:
+			<br>
+			<input type="text" name="occupation">
+		</fieldset>	
+		<fieldset>
+			<br>
+			Employer:
+			<br>
+			<input type="text" name="employer">
+			<br>
+			Employer Address:
+			<br>
+			<textarea name="employerAddress" rows="4" cols="30"></textarea>
+		</fieldset>	
+		<fieldset>
+			Type of loan:
+			<br>
+			<select name="loanType">
+			  <option value="null">Select Loan Type</option>
+			  <option value="commericial">Commercial</option>
+			  <option value="realEstate">Real Estate</option>
+			  <option value="personal">Personal</option>
+			  <option value="morgage">Mortage</option>
+			</select>
+			<br>
+			Enter Requested Loan Amount:
+			<br>
+			$<input type="text" name="loanAmount">
+			<br>
+			Loan Duration:
+			<br>
+			<input type="radio" name="loanLength" value="5year">5 Years
+			<input type="radio" name="loanLength" value="15year">15 Years
+			<input type="radio" name="loanLength" value="30year">30 Years
+			<br>
+			Special Conditions:
+			<br>
+			<input type="checkbox" name="spCond" value="downPayment">I have a down payment
+			<input type="checkbox" name="spCond" value="outOfState">Out-of-state resident
+			<input type="checkbox" name="spCond" value="married">Married
+			<input type="checkbox" name="spCond" value="cosign">Loan will be co-signed
+		</fieldset>
+		<fieldset>
+			Additional Comments:
+			<br>
+			<textarea name="additionalInfo" rows="10" cols="50"></textarea>
+		</fieldset>
+		<fieldset>
+			<h3>Contact Information</h3>
+			Applicant email address:
+			<br>
+			<input type="email" name="applicantEmail">
+			<br>
+			Applicant telephone number:
+			<br>
+			<input type="telephone" name="applicantPhone">
+			<br>
+			Applicant LinkedIn URL:
+			<br>
+			<input type="url" name="LinkedIn">
+		</fieldset>
+		<input type="submit">Submit Applicantion
+		<input type="reset">Reset
+	</form>
+</div>
